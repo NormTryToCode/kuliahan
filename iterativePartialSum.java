@@ -11,6 +11,7 @@ public class iterativePartialSum {
     public static int integerPartialSum(int[] integerList, int endIndex){
         int total = 0;
         if (endIndex > integerList.length - 1 || endIndex < 0) {
+            System.out.println("Invalid index!");
             return 0;
         }
         for (int i=endIndex; i >= 0; i--){
@@ -21,6 +22,7 @@ public class iterativePartialSum {
     public static double doublePartialSum(double[] doubleList, int endIndex){
         double total = 0;
         if (endIndex > doubleList.length - 1 || endIndex < 0) {
+            System.out.println("Invalid index!");
             return 0;
         }
         for (int i=endIndex; i >= 0; i--){
