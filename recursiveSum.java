@@ -11,7 +11,7 @@ public class recursiveSum {
     }
     public static int recursiveSumm(int[] myList, int index) {
         if (index < 0) {
-            return -1;
+            return 0;
         }
         else if (index == 0) {
             return myList[index];
