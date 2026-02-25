@@ -9,23 +9,23 @@ public class recursiveSum {
         System.out.println("my integer result " + integerResult);
         System.out.println("My double result " + myDoubleResult);
     }
-    public static int recursiveSumm(int[] myList, int index) {
-        if (index < 0) {
+    public static int recursiveSumm(int[] myList, int endIndex) {
+        if (endIndex < 0) {
             return 0;
         }
         else {
-            return myList[index] + recursiveSumm(myList, index - 1);
+            return myList[endIndex] + recursiveSumm(myList, endIndex - 1);
         }
     }
-    public static double recursiveSumm(double[] myList, int index) {
-        if (index < 0) {
+    public static double recursiveSumm(double[] myList, int endIndex) {
+        if (endIndex < 0) {
             return 0;
         }
-        else if (index == 0) {
-            return myList[index];
+        else if (endIndex == 0) {
+            return myList[endIndex];
         }
         else {
-            return myList[index] + recursiveSumm(myList, index - 1);
+            return myList[endIndex] + recursiveSumm(myList, endIndex - 1);
         }
     }
 }
