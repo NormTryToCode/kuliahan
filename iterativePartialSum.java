@@ -2,7 +2,7 @@
 public class iterativePartialSum {
 	public static void main(String[] args) {
         int[] myIntegerList = {1,2,3,4,5,67,7,8};
-        int integerResult = integerPartialSum(myIntegerList, 3);
+        int integerResult = integerPartialSum(myIntegerList, 93);
         double[] myDoubleList = {1.3, 1.32, 1.325, 13.34};
         double doubleResult = doublePartialSum(myDoubleList, 3);
         System.out.println("my integer result " + integerResult);
@@ -10,7 +10,7 @@ public class iterativePartialSum {
     }
     public static int integerPartialSum(int[] integerList, int endIndex){
         int total = 0;
-        if (endIndex > integerList.length - 1 || endIndex < 0) {
+        if (endIndex >= integerList.length || endIndex < 0) {
             System.out.println("Invalid index!");
             return 0;
         }
@@ -21,7 +21,7 @@ public class iterativePartialSum {
     }
     public static double doublePartialSum(double[] doubleList, int endIndex){
         double total = 0;
-        if (endIndex > doubleList.length - 1 || endIndex < 0) {
+        if (endIndex >= doubleList.length || endIndex < 0) {
             System.out.println("Invalid index!");
             return 0;
         }

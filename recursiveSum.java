@@ -10,7 +10,7 @@ public class recursiveSum {
         System.out.println("My double result " + myDoubleResult);
     }
     public static int recursiveSumm(int[] myList, int endIndex) {
-        if (endIndex < 0) {
+        if (endIndex < 0 || endIndex >= myList.length) {
             System.out.println("Invalid index!");
             return 0;
         }
@@ -19,7 +19,7 @@ public class recursiveSum {
         }
     }
     public static double recursiveSumm(double[] myList, int endIndex) {
-        if (endIndex < 0) {
+        if (endIndex < 0 || endIndex >= myList.length) {
             return 0;
         }
         else {
