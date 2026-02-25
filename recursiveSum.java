@@ -21,9 +21,6 @@ public class recursiveSum {
         if (endIndex < 0) {
             return 0;
         }
-        else if (endIndex == 0) {
-            return myList[endIndex];
-        }
         else {
             return myList[endIndex] + recursiveSumm(myList, endIndex - 1);
         }
