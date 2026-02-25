@@ -13,9 +13,6 @@ public class recursiveSum {
         if (index < 0) {
             return 0;
         }
-        else if (index == 0) {
-            return myList[index];
-        }
         else {
             return myList[index] + recursiveSumm(myList, index - 1);
         }
