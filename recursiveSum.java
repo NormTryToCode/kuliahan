@@ -14,6 +14,10 @@ public class recursiveSum {
             System.out.println("Invalid index!");
             return 0;
         }
+        else if (endIndex >= myList.length) {
+            System.out.println("Invalid index!");
+            return  0;
+        }
         else {
             return myList[endIndex] + recursiveSumm(myList, endIndex - 1);
         }
